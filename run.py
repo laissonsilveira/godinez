@@ -2,6 +2,9 @@
 from flask import Flask
 from flask import send_file
 
+import logging
+from logging import StreamHandler
+
 app = Flask(__name__,static_folder='webapp')
 
 @app.route('/')
@@ -16,7 +19,10 @@ def emerson():
 @app.route('/laisson/<id>')
 def laisson(id):
     return 'Param -> ' + id
-
+    
+file_handler = StreamHandler()
+file_handler.setLevel(logging.INFO)
+app.logger.addHandler(file_handler)
 
 if __name__ == '__main__':
     app.run(debug=True)
