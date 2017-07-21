@@ -1,5 +1,4 @@
 #!/usr/bin/python
-print("Depois tentar esse tuto https://scotch.io/tutorials/build-your-first-python-and-django-application")
 import SimpleHTTPServer
 import SocketServer
 
