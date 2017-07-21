@@ -1,16 +1,17 @@
 # godinez
 Software to index issues resolved and to learn develop with python
 
+**Mode DEV**
+	Into forder of project `godinez`:
+	  `pip install virtualenv`
+	  `virtualenv venv`
+	  `source ./venv/bin/activate`
+	  `pip install flask`
+	  `pip freeze > requirements.txt`
+
 **Init server**
 
 	`python run.py`
-
-OR
-
-	`chmod +x run.py`
-&& 
-
-	`./run.py`
 
 **Access**
 
