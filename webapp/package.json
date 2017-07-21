@@ -1,0 +1,14 @@
+{
+  "name": "godinez",
+  "version": "1.0.0",
+  "description": "Software to index issues resolved and to learn develop with python",
+  "main": "index.js",
+  "authors": [
+    "Emerson Mendes <emerson.emendes@gmail.com>",
+    "Laisson Silveira"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "vue": "2.4.2"
+  }
+}
