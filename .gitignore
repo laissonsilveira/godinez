@@ -145,3 +145,6 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 .idea/
+**/node_modules/
+**/yarn.lock
+**/.package.json.swp
