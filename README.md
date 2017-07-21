@@ -1,17 +1,19 @@
 # godinez
 Software to index issues resolved and to learn develop with python
 
-**Iniciar o servidor**
+**Init server**
 
-	`python http.py`
+	`python run.py`
 
 OR
 
-	`chmod +x http.py` 
+	`chmod +x run.py`
 && 
 
-	`./http.py`
+	`./run.py`
 
-**Acessar o servidor**
+**Access**
 
-	`http://localhost:8000`
+	`http://localhost:5000`
+	`http://localhost:5000/emerson`
+	`http://localhost:5000/laisson/<param>`
