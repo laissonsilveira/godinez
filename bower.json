@@ -1,14 +1,17 @@
 {
   "name": "godinez",
-  "version": "1.0.0",
   "description": "Software to index issues resolved and to learn develop with python",
   "main": "index.js",
   "authors": [
     "Emerson Mendes <emerson.emendes@gmail.com>",
-    "Laisson Silveira"
+    "Laisson.Silveira <laisson.r.silveira@gmail.com>"
   ],
   "license": "MIT",
+  "homepage": "https://github.com/laissonsilveira/godinez",
+  "ignore": [
+    "*"
+  ],
   "dependencies": {
-    "vue": "2.4.2"
+    "vue": "^2.4.2"
   }
 }

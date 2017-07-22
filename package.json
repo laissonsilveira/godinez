@@ -1,0 +1,10 @@
+{
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laissonsilveira/godinez.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "bower install"
+  }
+}
