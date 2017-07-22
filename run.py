@@ -1,29 +1,6 @@
 import os
-from flask import Flask
-from flask import send_file
-
-import logging
-from logging import StreamHandler
-
-app = Flask(__name__,static_folder='webapp')
-
-@app.route('/')
-def hello_world():
-    return send_file('webapp/index.html')
-
-@app.route('/emerson')
-def emerson():
-    return 'Bixona!'
-
-
-@app.route('/laisson/<id>')
-def laisson(id):
-    return 'Param -> ' + id
-    
-file_handler = StreamHandler()
-file_handler.setLevel(logging.INFO)
-app.logger.addHandler(file_handler)
+from app import app
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
-    app.run(debug=False,host='0.0.0.0',port=port)
+    app.run(debug=True, host='0.0.0.0', port=port)

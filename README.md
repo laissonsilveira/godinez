@@ -17,8 +17,7 @@ Software to index issues resolved and to learn develop with python
 **Access**
 
 	http://localhost:5000
-	http://localhost:5000/emerson
-	http://localhost:5000/laisson/<param>
+	http://localhost:5000/find -> return json list
 
 **Resolved Issues**
 
