@@ -20,7 +20,7 @@ Software to index issues resolved and to learn develop with python
 	http://localhost:5000/emerson
 	http://localhost:5000/laisson/<param>
 
-**Problems Resolved**
+**Resolved Issues**
 
 	Problem: heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/"
 	Fix: heroku ps:scale web=1 --app godinez
