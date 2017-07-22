@@ -9,6 +9,8 @@ Software to index issues resolved and to learn develop with python
 	<li><code>pip install flask</code></li>
   	<li><code>pip freeze > requirements.txt</code></li>
 
+  	<li><code>yarn install</code></li>
+
 **Init server**
 
 	python run.py
