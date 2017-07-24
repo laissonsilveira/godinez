@@ -1,13 +1,24 @@
 # godinez
 Software to index issues resolved and to learn develop with python
 
+**Install DB**
+    <li>https://www.mongodb.com/download-center#community</li>
+    <li>`config.py` - comments mode dev/production</li>
+
 **Mode DEV**
 	Into forder of project `godinez`:
 	<li><code>pip install virtualenv</code></li>
-	<li><code>sudo virtualenv venv # it needs sudo to be installed</code></li>
+	<li><code>virtualenv venv</code></li>
  	<li><code>source ./venv/bin/activate</code></li>
-	<li><code>pip install flask</code></li>
-  	<li><code>pip freeze > requirements.txt</code></li>
+	<li><code>pip install -r requirements.txt</code></li>
+  	<li><code>yarn install</code></li>
+
+    When install new dependencies, save to file after of install:
+    <li><code>pip freeze > requirements.txt</code></li>
+
+**Mode DEV**
+	Into forder of project `godinez`:
+	<li><code>pip install -r requirements.txt</code></li>
   	<li><code>yarn install</code></li>
 
 **Init server**
