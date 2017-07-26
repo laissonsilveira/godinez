@@ -5,9 +5,24 @@
   },
   "license": "MIT",
   "scripts": {
-    "postinstall": "node node_modules/bower/bin/bower install"
+    "preinstall" : "rm -rf node_modules",
+    "postinstall": "node node_modules/bower/bin/bower install && npm run build",
+    "build": "node node_modules/gulp/bin/gulp.js build",
+    "build-dev": "node node_modules/gulp/bin/gulp.js build-dev"
   },
-  "dependencies": {
-    "bower": "^1.8.0"
+  "dependencies": {},
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "bower": "^1.8.0",
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-util": "^3.0.8",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   }
 }

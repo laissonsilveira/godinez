@@ -16,11 +16,6 @@ Software to index issues resolved and to learn develop with python
     When install new dependencies, save to file after of install:
     <li><code>pip freeze > requirements.txt</code></li>
 
-**Mode DEV**
-	Into forder of project `godinez`:
-	<li><code>pip install -r requirements.txt</code></li>
-  	<li><code>yarn install</code></li>
-
 **Init server**
 
 	python run.py

@@ -1,6 +1,8 @@
+import Teste from "./teste";
+
 new Vue({
     el: '#app',
     data: {
-        message: 'Welcome to Godinez!'
+        message: new Teste().getName()
     }
 });
