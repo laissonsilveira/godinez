@@ -1,13 +1,14 @@
 import json
-from flask import Blueprint, Response
-from flask import send_file
+import os
+
+from flask import Blueprint, Response, render_template
 from app.model import Problems
 from app import db
 from bson import ObjectId
 from mongoalchemy.document import Document
 
-main = Blueprint('blueprint_%s' % __name__, __name__)
-
+template_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(os.path.dirname(__file__)))), 'web')
+main = Blueprint('godinez',__name__,template_folder=template_dir)
 
 def encode_model(obj, recursive=False):
     if obj is None:
@@ -36,8 +37,8 @@ def encode_model(obj, recursive=False):
 
 
 @main.route('/')
-def index_view():
-    return send_file('static/templates/index.html')
+def index():
+    return render_template('index.html')
 
 
 @main.route('/find', methods=['GET'])

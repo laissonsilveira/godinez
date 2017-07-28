@@ -5,8 +5,8 @@ Software to index issues resolved and to learn develop with python
     <li>https://www.mongodb.com/download-center#community</li>
     <li>`config.py` - comments mode dev/production</li>
 
-**Mode DEV**
-	Into forder of project `godinez`:
+**Mode DEV (Server)**
+	Into root forder :
 	<li><code>pip install virtualenv</code></li>
 	<li><code>virtualenv venv</code></li>
  	<li><code>source ./venv/bin/activate</code></li>
@@ -19,6 +19,10 @@ Software to index issues resolved and to learn develop with python
 **Init server**
 
 	python run.py
+
+**Mode DEV (Web)**
+	Into web forder :
+  	<li><code>yarn install</code></li>
 
 **Access**
 

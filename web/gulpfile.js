@@ -9,8 +9,8 @@ const rename = require('gulp-rename');
 const gutil = require('gulp-util');
 
 const config = {
-  src :'app/static/src',
-  dest : 'app/static/dist'
+  src :'src',
+  dest : 'dist'
 };
 
 gulp.task('bundle-app', () => {
