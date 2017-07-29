@@ -1,4 +1,4 @@
-import VueRouter from '../lib/vue-router/dist/vue-router';
+import VueRouter from '../dist/lib/vue-router/dist/vue-router';
 import App from './components/App.vue';
 import ComponentA from './components/ComponentA.vue';
 import ComponentB from './components/ComponentA.vue';
