@@ -6,7 +6,7 @@ from logging import StreamHandler
 from flask import Flask
 
 # Import MongoKit
-from flask_mongoalchemy import MongoAlchemy
+from flask_pymongo import PyMongo
 
 # Define the WSGI application object
 app = Flask(__name__)
@@ -22,7 +22,7 @@ app.config.from_object('config')
 # Define the database object which is imported
 # by modules and controllers
 # connect to the database
-db = MongoAlchemy(app)
+mongo = PyMongo(app)
 
 # Import a module / component using its blueprint handler variable (mod_auth)
 from app.views import main
