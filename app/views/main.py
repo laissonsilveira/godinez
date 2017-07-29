@@ -7,8 +7,15 @@ from app import db
 from bson import ObjectId
 from mongoalchemy.document import Document
 
-template_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(os.path.dirname(__file__)))), 'web')
-main = Blueprint('godinez',__name__,template_folder=template_dir)
+def mount_web_path(folder):
+    return os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(os.path.dirname(__file__)))), folder)
+
+main = Blueprint(
+    'godinez',
+    __name__,
+    template_folder=mount_web_path(folder='web'),  
+    static_folder=mount_web_path(folder='web/dist')
+)
 
 def encode_model(obj, recursive=False):
     if obj is None:
@@ -39,7 +46,6 @@ def encode_model(obj, recursive=False):
 @main.route('/')
 def index():
     return render_template('index.html')
-
 
 @main.route('/find', methods=['GET'])
 def find_problems():
