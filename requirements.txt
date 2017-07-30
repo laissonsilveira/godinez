@@ -11,3 +11,4 @@ pymongo==3.4.0
 pytz==2017.2
 six==1.10.0
 Werkzeug==0.12.2
+Flask_Cors==3.0.3

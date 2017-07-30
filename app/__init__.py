@@ -7,9 +7,11 @@ from flask import Flask
 
 # Import MongoKit
 from flask_pymongo import PyMongo
+from flask_cors import CORS, cross_origin
 
 # Define the WSGI application object
 app = Flask(__name__)
+CORS(app)
 
 # Define log
 file_handler = StreamHandler()

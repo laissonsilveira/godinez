@@ -1,13 +1,13 @@
 import Vue from "vue"
 import Router from "vue-router"
-import Home from "@/components/Home"
-import Issues from "@/components/issues/issues"
+import home from "@/views/home/home"
+import issues from "@/views/issues/issues"
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    { path: "/", component: Home, name: "Home" },
-    { path: "/issues", component: Issues, name: "Issues" }
+    { path: "/", component: home, name: "Home" },
+    { path: "/issues", component: issues, name: "Issues" }
   ]
 })
