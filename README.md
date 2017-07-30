@@ -17,7 +17,7 @@ Software to index issues resolved and to learn develop with python
 
 **Mode DEV (Web)**
 	Into web forder :
-  	<li><code>yarn install</code></li>
+  <li><code>yarn install</code></li>
 
 **Init server**
 

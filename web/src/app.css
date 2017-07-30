@@ -1,0 +1,39 @@
+@import "../node_modules/materialize-css/dist/css/materialize.css";
+@import "../node_modules/material-design-icons/iconfont/material-icons.css";
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000000;
+}
+
+nav {
+  background-color: #fff59d;
+}
+
+nav ul a {
+  color: #000000;   
+}
+
+nav .brand-logo {
+  color: #000000;
+}
+
+.page-footer {
+  color: #000000;
+  background-color: #fff59d;
+}
+
+.page-footer .footer-copyright {
+  color: #000000;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+}
