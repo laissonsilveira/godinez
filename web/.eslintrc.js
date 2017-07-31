@@ -15,7 +15,7 @@ module.exports = {
     'arrow-parens': 0,
     'generator-star-spacing': 0,
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'quotes': ['error', 'double'],
+    'quotes': [0, 'double'],
     "semi": 0
   }
 }

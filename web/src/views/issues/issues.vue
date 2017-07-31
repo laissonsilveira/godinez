@@ -2,29 +2,41 @@
 <style scoped src="./issues.css"></style>
 <script>
   import IssuesController from "../../controllers/issuesController";
-  import Vue from "vue";
   import Gzmodal from "../../components/modal/gzmodal";
-  const controller = new IssuesController(Vue.http);
+  import { bus } from "../../main"
 
   export default {
     name: "issues",
     components: { Gzmodal },
     data () {
       return {
-        issues: [{}]
+        issues: [],
+        issue: {
+          title: "New Title"
+        }
       }
     },
     methods: {
+
       getIssues () {
-        return controller.findAll((issues) => {
+        return this.controller.findAll((issues) => {
           this.issues = issues;
         });
       },
+
       createIssue () {
-        console.log("createIssue issues cx!");
+        bus.$emit("openModal");
+      },
+
+      saveIssue () {
+        this.controller.save(this.issue, () => {
+          this.getIssues();
+        });
       }
+
     },
-    mounted: function () {
+    mounted () {
+      this.controller = new IssuesController(this.$http);
       this.getIssues();
     }
   }
