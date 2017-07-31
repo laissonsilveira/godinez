@@ -1,5 +1,4 @@
 <div class="row">
- 
   <div class="col s12">
     <table class="responsive-table centered striped">
       <thead>
@@ -38,9 +37,29 @@
   </div>
 
   <div class="fixed-action-btn">
-    <a class="btn-floating waves-effect waves-light btn-large green">
+    <a 
+      @click="createIssue()" 
+      class="btn-floating waves-effect waves-light btn-large green"
+    >
       <i class="large material-icons">add</i>
     </a>
   </div>
+
+  <gzmodal>
+     <span slot="title">Issues</span> 
+     <span slot="body">
+
+        Body
+
+     </span>
+     <span slot="footer">
+      <a class="modal-action modal-close waves-effect waves-green btn-flat">
+        Save
+      </a>
+      <a class="modal-action modal-close waves-effect waves-green btn-flat">
+        Close
+      </a>
+     </span>
+  </gzmodal>
 
 </div>

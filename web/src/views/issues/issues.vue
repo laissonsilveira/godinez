@@ -1,26 +1,27 @@
 <template src="./issues.html"></template>
-<style src="./issues.css"></style>
+<style scoped src="./issues.css"></style>
 <script>
   import IssuesController from "../../controllers/issuesController";
   import Vue from "vue";
-
+  import Gzmodal from "../../components/modal/gzmodal";
   const controller = new IssuesController(Vue.http);
 
-  let data = {
-    issues: [{}]
-  }
-
   export default {
-    name: "app",
-    data: () => {
-      return data;
+    name: "issues",
+    components: { Gzmodal },
+    data () {
+      return {
+        issues: [{}]
+      }
     },
     methods: {
-      getIssues: () => {
+      getIssues () {
         return controller.findAll((issues) => {
-          console.log("issues: ", issues);
-          data.issues = issues;
+          this.issues = issues;
         });
+      },
+      createIssue () {
+        console.log("createIssue issues cx!");
       }
     },
     mounted: function () {
